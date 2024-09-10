@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, "poppins";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("../img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.parent {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.parent h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.parent .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.Remember {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  accent-color: #fff;
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+.Remember label input {
+  color: #fff;
+  margin-right: 3px;
+}
+.Remember a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.Remember a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  margin: 20px 0;
+  background: #fff;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.Register {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0 15px;
+}
+.Register p a {
+  text-decoration: none;
+  color: #fff;
+}
+.Register p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (maaxwidth:767px) {
+  .parent {
+    width: 70%;
+    height: 75vh;
+  }
+}
